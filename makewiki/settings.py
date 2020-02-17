@@ -127,6 +127,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+DEFAULT_LOGOUT_URL = '/' #required for user authentication
+
 # wiki app settings
 WIKI_PAGE_TITLE_MAX_LENGTH = 600
 
