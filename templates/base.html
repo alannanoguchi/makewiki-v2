@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
       <a class="navbar-brand" href="{% url 'wiki-list-page' %}"><i class="fas fa-fw fa-book"></i> makewiki</a>
       <form class="form-inline ml-auto">
-        <div class="text-white">Hello, <strong>USERNAME</strong>!</div>
+        <div class="text-white">Hello, <strong>{{ request.user.username }}</strong>!</div>
         <!-- request.user.is_authenticated checks to see if the user is authenticated -->
         {% if request.user.is_authenticated %} 
         <a href="#" class="btn btn-success ml-4">New Page</a>
