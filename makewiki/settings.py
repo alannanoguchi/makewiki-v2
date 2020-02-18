@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'wiki' #created app
+    'wiki', #created app
     'accounts' #created app
 ]
 

@@ -29,7 +29,9 @@ urlpatterns = [
     # Wiki App
     path('', include('wiki.urls')),
 
-    # User Authentication 
+    # User Authentication
     path('accounts/', include('django.contrib.auth.urls')),
+    # Must include:
+    path('accounts/', include('accounts.urls'))
 
 ]
